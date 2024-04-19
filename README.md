@@ -19,6 +19,9 @@ cp -rp /etc/nginx/nginx.conf/mnt/bkp_zabbix/etc_nginx/conf_files;<BR>
 cp -rp /etc/nginx/conf.d/zabbix.conf//mnt/bkp_zabbix/etc_nginx/conf_d/conf_files;<BR>
 cp -rp /etc/php-fpm.d/mnt/bkp_zabbix/php_fpm_d/zabbix_conf_files;<BR>
 
+-FAZER BACKUP DO BANCO <BR>
+mysqldump -u root -p --single-transaction 'zabbixbd' |gzip > /mnt/bkp_zabbix/zabbixbd/bdzabbix_files/zabbix_bkp.sql.gz <BR>
+
 -PARAR O SERVIÇO DO ZABBIX<BR>
 
 systemctl stop zabbix-server<BR>
