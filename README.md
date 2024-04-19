@@ -4,21 +4,21 @@ zabbix_upgrade 6.4 to 7.0
 CRIAR AS PASTAS PARA O BACKUP
 
 mkdir -p /mnt/bkp_zabbix/etc_zabbix/zabbix_conf_files;<BR>
-mkdir -p /mnt/bkp_zabbix/usr_sbin/zabbix_server_files;
-mkdir -p /mnt/bkp_zabbix/usr_share_doc/zabbix_files;
-mkdir -p /mnt/bkp_zabbix/etc_nginx/conf_files;
-mkdir -p /mnt/bkp_zabbix/etc_nginx/conf_d/conf_files;
-mkdir -p /mnt/bkp_zabbix/php_fpm_d/zabbix_conf_files;
-mkdir -p /mnt/bkp_zabbix/zabbixbd/bdzabbix_files;
+mkdir -p /mnt/bkp_zabbix/usr_sbin/zabbix_server_files;<BR>
+mkdir -p /mnt/bkp_zabbix/usr_share_doc/zabbix_files;<BR>
+mkdir -p /mnt/bkp_zabbix/etc_nginx/conf_files;<BR>
+mkdir -p /mnt/bkp_zabbix/etc_nginx/conf_d/conf_files;<BR>
+mkdir -p /mnt/bkp_zabbix/php_fpm_d/zabbix_conf_files;<BR>
+mkdir -p /mnt/bkp_zabbix/zabbixbd/bdzabbix_files;<BR>
 
 -COPIAR OS BACKUP´S
 
-cp -rp /etc/zabbix//mnt/bkp_zabbix/etc_zabbix/zabbix_conf_files;
-cp -rp /usr/sbin/zabbix/mnt/bkp_zabbix/usr_sbin/zabbix_server_files;
-cp -rp /usr/share/doc/zabbix-*/mnt/bkp_zabbix/usr_share_doc/zabbix_files;
-cp -rp /etc/nginx/nginx.conf/mnt/bkp_zabbix/etc_nginx/conf_files;
-cp -rp /etc/nginx/conf.d/zabbix.conf//mnt/bkp_zabbix/etc_nginx/conf_d/conf_files;
-cp -rp /etc/php-fpm.d/mnt/bkp_zabbix/php_fpm_d/zabbix_conf_files;
+cp -rp /etc/zabbix//mnt/bkp_zabbix/etc_zabbix/zabbix_conf_files;<BR>
+cp -rp /usr/sbin/zabbix/mnt/bkp_zabbix/usr_sbin/zabbix_server_files;<BR>
+cp -rp /usr/share/doc/zabbix-*/mnt/bkp_zabbix/usr_share_doc/zabbix_files;<BR>
+cp -rp /etc/nginx/nginx.conf/mnt/bkp_zabbix/etc_nginx/conf_files;<BR>
+cp -rp /etc/nginx/conf.d/zabbix.conf//mnt/bkp_zabbix/etc_nginx/conf_d/conf_files;<BR>
+cp -rp /etc/php-fpm.d/mnt/bkp_zabbix/php_fpm_d/zabbix_conf_files;<BR>
 
 -PARAR O SERVIÇO DO ZABBIX
 
