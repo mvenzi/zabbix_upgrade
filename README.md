@@ -3,7 +3,7 @@ zabbix_upgrade 6.4 to 7.0
 #
 CRIAR AS PASTAS PARA O BACKUP
 
-mkdir -p /mnt/bkp_zabbix/etc_zabbix/zabbix_conf_files;
+mkdir -p /mnt/bkp_zabbix/etc_zabbix/zabbix_conf_files;<BR>
 mkdir -p /mnt/bkp_zabbix/usr_sbin/zabbix_server_files;
 mkdir -p /mnt/bkp_zabbix/usr_share_doc/zabbix_files;
 mkdir -p /mnt/bkp_zabbix/etc_nginx/conf_files;
