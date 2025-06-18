@@ -1,0 +1,53 @@
+zabbix_export:
+  version: '6.2'
+  date: '2025-06-18T13:28:18Z'
+  host_groups:
+    -
+      uuid: ee413397b3b4416a9b52ba129e3be090
+      name: Clientes/TRT18
+    -
+      uuid: ece2bb5d436d43dab8ea7c8e38bd829e
+      name: 'Petacorp Sites'
+  hosts:
+    -
+      host: Senha_Segura_TRT18_01
+      name: Senha_Segura_TRT18_01
+      proxy:
+        name: trt18
+      templates:
+        -
+          name: 'TEMPLATE WEBSCENARIO'
+      groups:
+        -
+          name: Clientes/TRT18
+        -
+          name: 'Petacorp Sites'
+      interfaces:
+        -
+          interface_ref: if1
+      tags:
+        -
+          tag: Application
+          value: 'https://10.18.2.190/flow/activity'
+        -
+          tag: Application
+          value: Senha_Segura_TRT18_01
+        -
+          tag: Petacorp
+        -
+          tag: SLA
+          value: TRT18
+        -
+          tag: TAG
+          value: PETACORP
+      macros:
+        -
+          macro: '{$CODE}'
+          value: '200'
+        -
+          macro: '{$NOME}'
+          value: Senha_Segura_TRT18_01
+        -
+          macro: '{$URL}'
+          value: 'https://10.18.2.190/flow/activity'
+      inventory_mode: DISABLED
